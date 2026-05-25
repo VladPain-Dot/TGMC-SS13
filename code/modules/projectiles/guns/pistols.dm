@@ -440,7 +440,6 @@
 	force = 5
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
-		/obj/item/attachable/flashlight,
 		/obj/item/attachable/heavy_barrel,
 		/obj/item/attachable/lace,
 		/obj/item/attachable/flashlight/under,
