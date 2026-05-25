@@ -1594,7 +1594,7 @@
 		if(is_type_in_list(R, excluded_reagents_sulfa))
 			continue
 
-	var/purge = min(R.volume, purge_rate)
+		var/purge = min(R.volume, purge_rate)
 		L.reagents.remove_reagent(R.type, purge)
 		absorbtion = min(absorbtion + purge, max_absorbtion)
 
