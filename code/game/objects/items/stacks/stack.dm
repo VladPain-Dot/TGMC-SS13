@@ -199,7 +199,7 @@
 	if(recipe.skill_req && user.skills.getRating(SKILL_CONSTRUCTION) > recipe.skill_req)
 		building_time -= clamp(recipe.time * (user.skills.getRating(SKILL_CONSTRUCTION) - recipe.skill_req) * 0.40, 0 , 0.85 * building_time) // -40% time each extra skill point
 	if(CHECK_BITFIELD(SSticker.mode?.round_type_flags, MODE_ALLOW_MARINE_QUICKBUILD))
-		if(!SSticker.round_start_time || (world.time - SSticker.round_start_time) < 9 MINUTES)
+		if(!SSticker.round_start_time || (world.time - SSticker.round_start_time) < 10 MINUTES)
 			building_time = 0
 	if(building_time)
 		balloon_alert_to_viewers("building [recipe.title]")
