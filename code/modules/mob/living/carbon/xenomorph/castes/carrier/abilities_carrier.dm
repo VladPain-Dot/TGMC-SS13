@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_THROW_HUGGER,
 	)
-	cooldown_duration = 2.5 SECONDS
+	cooldown_duration = 3 SECONDS
 
 /datum/action/ability/activable/xeno/throw_hugger/get_cooldown()
 	return xeno_owner.xeno_caste.hugger_delay
