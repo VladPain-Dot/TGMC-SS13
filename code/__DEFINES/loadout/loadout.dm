@@ -82,9 +82,9 @@ GLOBAL_LIST_INIT(marine_selector_cats, list(
 	CAT_POU = 2,
 ))
 
-#define METAL_PRICE_IN_GEAR_VENDOR 2
+#define METAL_PRICE_IN_GEAR_VENDOR 3
 #define PLASTEEL_PRICE_IN_GEAR_VENDOR 4
-#define SANDBAG_PRICE_IN_GEAR_VENDOR 3
+#define SANDBAG_PRICE_IN_GEAR_VENDOR 2
 
 //List of all visible and accessible slot on the loadout maker
 GLOBAL_LIST_INIT(visible_item_slot_list, list(
