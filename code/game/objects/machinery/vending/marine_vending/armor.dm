@@ -108,6 +108,9 @@
 			/obj/item/armor_module/armor/chest/marine/helljumper = -1,
 			/obj/item/armor_module/armor/chest/marine/ranger = -1,
 			/obj/item/armor_module/armor/chest/marine/mjolnir = -1,
+			/obj/item/armor_module/armor/chest/marine/kabuto = -1,
+			/obj/item/armor_module/armor/chest/marine/hotaru = -1,
+			/obj/item/armor_module/armor/chest/marine/dashe = -1,
 		),
 		"Jaeger Mk.I armpiece" = list(
 			/obj/item/armor_module/armor/arms/marine/skirmisher = -1,
@@ -120,6 +123,9 @@
 			/obj/item/armor_module/armor/arms/marine/helljumper = -1,
 			/obj/item/armor_module/armor/arms/marine/ranger = -1,
 			/obj/item/armor_module/armor/arms/marine/mjolnir = -1,
+			/obj/item/armor_module/armor/arms/marine/kabuto = -1,
+			/obj/item/armor_module/armor/arms/marine/hotaru = -1,
+			/obj/item/armor_module/armor/arms/marine/dashe = -1,
 		),
 		"Jaeger Mk.I legpiece" = list(
 			/obj/item/armor_module/armor/legs/marine/skirmisher = -1,
@@ -133,6 +139,9 @@
 			/obj/item/armor_module/armor/legs/marine/helljumper = -1,
 			/obj/item/armor_module/armor/legs/marine/ranger = -1,
 			/obj/item/armor_module/armor/legs/marine/mjolnir = -1,
+			/obj/item/armor_module/armor/legs/marine/kabuto = -1,
+			/obj/item/armor_module/armor/legs/marine/hotaru = -1,
+			/obj/item/armor_module/armor/legs/marine/dashe = -1,
 		),
 		"Jaeger Mk.I helmets" = list(
 			/obj/item/clothing/head/modular/marine/old/skirmisher = -1,
