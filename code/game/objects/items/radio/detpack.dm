@@ -146,10 +146,6 @@
 	if(!signal || !on)
 		return
 
-	var/turf/location = get_turf(signal.source)
-	if(location.z != z)
-		return
-
 	if(signal.data["code"] != code)
 		return
 
@@ -160,7 +156,7 @@
 		return
 	armed = TRUE
 	log_bomber(usr, "triggered", src)
-	detonation_pending = addtimer(CALLBACK(src, PROC_REF(do_detonate)), timer SECONDS, TIMER_STOPPABLE)
+	detonation_pending = addtimer(CALLBACK(src, PROC_REF(detonate)), timer SECONDS, TIMER_STOPPABLE)
 	if(timer > 10)
 		sound_timer = addtimer(CALLBACK(src, PROC_REF(do_play_sound_normal)), 1 SECONDS, TIMER_LOOP|TIMER_STOPPABLE)
 		addtimer(CALLBACK(src, PROC_REF(change_to_loud_sound)), timer-10)
@@ -326,7 +322,7 @@
 		on = FALSE
 	update_icon()
 
-/obj/item/explosive/plastique/detpack/proc/do_detonate()
+/obj/item/explosive/plastique/detpack/detonate()
 	detonation_pending = null
 	if(plant_target == null || !plant_target.loc) //need a target to be attached to
 		if(timer < DETPACK_TIMER_MIN) //reset to minimum 5 seconds; no 'cooking' with aborted detonations.
