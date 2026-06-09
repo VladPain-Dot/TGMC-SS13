@@ -247,7 +247,7 @@
 		return FALSE
 	if(!istype(target, /turf/closed))
 		return FALSE
-	if(target.resistance_flags & INDESTRUCTIBLE)
+	if((target.resistance_flags & INDESTRUCTIBLE) || (target.resistance_flags & PLASMACUTTER_IMMUNE))
 		return FALSE
 
 	user.visible_message(span_warning("[user] is trying to plant [name] on [target]!"),
@@ -309,5 +309,6 @@
 	smoke.set_up(smokeradius, plant_target, 2)
 	smoke.start()
 	plant_target.plastique_act()
-	qdel(plant_target) //🐽🐽🐽
+	var/turf/closed/T = plant_target
+	T.ChangeTurf(T.open_turf_type) //🐽🐽🐽
 	qdel(src)

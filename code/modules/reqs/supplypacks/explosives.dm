@@ -118,6 +118,16 @@
 	contains = list(/obj/item/explosive/plastique/detpack)
 	cost = 50
 
+/datum/supply_packs/explosive/plastique_trench
+	name = "Trench charge"
+	contains = list(/obj/item/explosive/plastique/trench)
+	cost = 30
+
+/datum/supply_packs/explosive/detpack_trench
+	name = "Better trench charge"
+	contains = list(/obj/item/explosive/plastique/detpack/trench)
+	cost = 50
+
 /datum/supply_packs/explosives/mortar
 	name = "T-50S mortar crate"
 	contains = list(/obj/item/mortar_kit)

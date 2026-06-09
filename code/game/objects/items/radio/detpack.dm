@@ -363,7 +363,7 @@
 ////////////////////////////////////////////////
 
 /obj/item/explosive/plastique/detpack/trench
-	name = "Better trench charge"
+	name = "Better Trench charge"
 	desc = "Used for fast trench excavation. Since you have no idea what a trench is, you can probably use this thing to dig a hole in a rock."
 	/// Cardinal direction from the planter toward the target wall at plant time.
 	var/plant_direction
