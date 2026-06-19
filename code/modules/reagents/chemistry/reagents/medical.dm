@@ -1540,7 +1540,7 @@
 		if(organ)
 			L.adjust_tox_loss(15 * effect_str)
 			holder.remove_reagent(/datum/reagent/medicine/sulfasalazine, 25)
-			organ.heal_organ_damage(10 * effect_str)
+			organ.heal_organ_damage(15 * effect_str)
 			return ..()
 
 	if(volume > 100 && prob(10))
@@ -1579,11 +1579,21 @@
 		/datum/reagent/medicine/saline_glucose,
 	)
 
+	var/static/list/reduced_purge_reagents = list(
+		/datum/reagent/toxin,
+		/datum/reagent/hypervene,
+	)
+
 	for(var/datum/reagent/R in L.reagents.reagent_list)
 		if(is_type_in_list(R, excluded_reagents_sulfa))
 			continue
 
-		var/purge = min(R.volume, purge_rate)
+		var/current_purge_rate = purge_rate
+
+		if(current_purge_rate > 0 && is_type_in_list(R, reduced_purge_reagents))
+			current_purge_rate = 5
+
+		var/purge = min(R.volume, current_purge_rate)
 		L.reagents.remove_reagent(R.type, purge)
 		absorbtion = min(absorbtion + purge, max_absorbtion)
 
