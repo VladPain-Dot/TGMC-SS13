@@ -216,13 +216,13 @@
 	containertype = /obj/structure/closet/crate/weapon
 
 /datum/supply_packs/vehicles/lvrt_cannon
-	name = "EM-2600 'SARDEN' Autocannon"
+	name = "EM-2500 Low Velocity Cannon"
 	contains = list(/obj/item/armored_weapon/lvrt_cannon,)
 	cost = 400
 	containertype = /obj/structure/closet/crate/weapon
 
 /datum/supply_packs/vehicles/lvrt_flamer
-	name = "EM-2600 'SARDEN' Flamer"
+	name = "EM-2400 Low Impulse Flamer"
 	contains = list(/obj/item/armored_weapon/lvrt_flamer,)
 	cost = 350
 	containertype = /obj/structure/closet/crate/weapon
