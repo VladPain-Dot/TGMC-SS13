@@ -13,7 +13,7 @@
 	permitted_mods = list(/obj/item/tank_module/ability/smoke_launcher)
 	required_entry_skill = SKILL_LARGE_VEHICLE_DEFAULT
 	minimap_icon_state = "apc"
-	max_integrity = 600
+	max_integrity = 700
 	soft_armor = list(MELEE = 40, BULLET = 60 , LASER = 60, ENERGY = 60, BOMB = 40, BIO = 60, FIRE = 40, ACID = 40)
 	max_occupants = 4 //Boy is TINY.
 	pixel_w = 0

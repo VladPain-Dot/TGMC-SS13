@@ -207,24 +207,28 @@
 		/obj/item/pamphlet/tank_loader,
 	)
 	cost = 1600
+	crash_restricted = TRUE
 	containertype = /obj/structure/largecrate/supply
 
 /datum/supply_packs/vehicles/lvrt_sarden
 	name = "EM-2600 'SARDEN' Autocannon"
 	contains = list(/obj/item/armored_weapon/lvrt_sarden,)
 	cost = 300
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/weapon
 
 /datum/supply_packs/vehicles/lvrt_cannon
 	name = "EM-2500 Low Velocity Cannon"
 	contains = list(/obj/item/armored_weapon/lvrt_cannon,)
 	cost = 400
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/weapon
 
 /datum/supply_packs/vehicles/lvrt_flamer
 	name = "EM-2400 Low Impulse Flamer"
 	contains = list(/obj/item/armored_weapon/lvrt_flamer,)
 	cost = 350
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/weapon
 
 /datum/supply_packs/vehicles/lvrt_sarden_ammo
@@ -234,6 +238,7 @@
 		/obj/item/ammo_magazine/tank/sarden_clip,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/lvrt_sarden_ammo_he
@@ -243,6 +248,7 @@
 		/obj/item/ammo_magazine/tank/sarden_clip/high_explosive,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/lvrt_cannon_ammo
@@ -252,6 +258,7 @@
 		/obj/item/ammo_magazine/tank/lowvel_cannon_recon,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/lvrt_cannon_ammo_he
@@ -261,6 +268,7 @@
 		/obj/item/ammo_magazine/tank/lowvel_cannon_recon/high_explosive,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/lvrt_cannon_ammo_hefa
@@ -270,6 +278,7 @@
 		/obj/item/ammo_magazine/tank/lowvel_high_explosive_fragmenting_antipersonnel,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
 
 /datum/supply_packs/vehicles/lvrt_flamer_ammo
@@ -279,4 +288,5 @@
 		/obj/item/ammo_magazine/tank/lowvel_canister,
 	)
 	cost = 50
+	crash_restricted = TRUE
 	containertype = /obj/structure/closet/crate/ammo
